@@ -1,0 +1,30 @@
+{
+	"name": "parcel-ts-eslint",
+	"version": "1.0.0",
+	"description": "Bare bones parcel-bundler template with ts and eslint preconfigured",
+	"private": true,
+	"main": "index.ts",
+	"scripts": {
+		"dev": "tsc-watch --project tsconfig.dev.json --onSuccess \"parcel src/index.html\"",
+		"build": "tsc --project tsconfig.json && parcel build src/index.html"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/TinySquid/parcel-ts-eslint.git"
+	},
+	"keywords": [],
+	"author": "Michael Nunes <tinysquid.git@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/TinySquid/parcel-ts-eslint/issues"
+	},
+	"homepage": "https://github.com/TinySquid/parcel-ts-eslint#readme",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^4.21.0",
+		"@typescript-eslint/parser": "^4.21.0",
+		"eslint": "^7.23.0",
+		"parcel-bundler": "^1.12.5",
+		"tsc-watch": "^4.2.9",
+		"typescript": "^4.2.3"
+	}
+}

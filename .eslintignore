@@ -1,0 +1,3 @@
+# don't lint node_modules or build output
+node_modules
+dist
